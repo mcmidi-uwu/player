@@ -1,0 +1,4 @@
+# Whether a fancy particle will be shown above the
+# player's head whenever they play a note.
+# Must be either true or false.
+particles: true
