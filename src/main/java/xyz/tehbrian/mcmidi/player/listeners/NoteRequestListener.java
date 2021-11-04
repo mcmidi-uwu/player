@@ -25,10 +25,10 @@ public class NoteRequestListener implements Listener {
 
         if (event.getType() == RequestType.ON) {
             player.getWorld().playSound(player.getLocation(),
-                    note.getInstrument().asSound(),
+                    note.instrument().asBukkitSound(),
                     SoundCategory.MASTER,
-                    note.getVelocity(),
-                    note.getPitch().asFloat());
+                    note.velocity(),
+                    note.pitch().asFloat());
 
             Location location = player.getLocation();
             player.getWorld().spawnParticle(Particle.NOTE,
@@ -36,7 +36,7 @@ public class NoteRequestListener implements Listener {
                     location.getY() + 2.25,
                     location.getZ(),
                     0,
-                    note.getPitch().getParticleColor(),
+                    note.pitch().getParticleColor(),
                     0,
                     0,
                     1);
