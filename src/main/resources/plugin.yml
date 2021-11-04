@@ -1,8 +1,10 @@
 name: player
-version: @version@
-main: xyz.tehbrian.mcmidi.player.PlayerPlugin
-api-version: 1.16
+description: Plays mcmidi note requests.
 authors: [ TehBrian ]
-description: Plays note events sent out by mcmidi server.
 website: https://github.com/mcmidi-uwu/player
+
 depend: [ server ]
+
+version: ${version}
+main: xyz.tehbrian.mcmidi.player.PlayerPlugin
+api-version: 1.17

@@ -11,13 +11,10 @@ import xyz.tehbrian.mcmidi.serverapi.NoteRequestEvent;
 import xyz.tehbrian.mcmidi.serverapi.RequestType;
 
 /**
- * Listens for {@link NoteRequestEvent}s sent by mcmidi server.
+ * Listens for {@link NoteRequestEvent}s.
  */
-public class NoteRequestListener implements Listener {
+public final class NoteRequestListener implements Listener {
 
-    /**
-     * Called when a note is requested.
-     */
     @EventHandler
     public void onNoteRequest(final NoteRequestEvent event) {
         final Player player = event.getPlayer();

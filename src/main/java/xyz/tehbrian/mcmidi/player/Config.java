@@ -9,22 +9,14 @@ import java.util.logging.Logger;
  * Grabs and holds values from a {@link org.bukkit.configuration.file.FileConfiguration}
  * for easy access.
  */
-public class Config {
+public final class Config {
 
-    /**
-     * FileConfiguration reference.
-     */
     private final FileConfiguration config;
-    /**
-     * Logger reference.
-     */
     private final Logger logger;
 
-    private boolean areParticlesEnabled;
+    private boolean particlesEnabled;
 
     /**
-     * Constructs {@link Config}.
-     *
      * @param config the {@link FileConfiguration} to use for values
      * @param logger the {@link Logger} to yell at when values are absent
      */
@@ -41,7 +33,7 @@ public class Config {
      * Whines to {@link #logger} if they're invalid.
      */
     public void loadValues() {
-        this.areParticlesEnabled = this.config.getBoolean("particles", true);
+        this.particlesEnabled = this.config.getBoolean("particles", true);
     }
 
     /**
@@ -50,8 +42,8 @@ public class Config {
      *
      * @return a boolean
      */
-    public boolean areParticlesEnabled() {
-        return this.areParticlesEnabled;
+    public boolean particlesEnabled() {
+        return this.particlesEnabled;
     }
 
 }

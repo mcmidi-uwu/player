@@ -8,9 +8,6 @@ import xyz.tehbrian.mcmidi.player.inject.ConfigModule;
 import xyz.tehbrian.mcmidi.player.inject.PluginModule;
 import xyz.tehbrian.mcmidi.player.listeners.NoteRequestListener;
 
-/**
- * The main plugin class for player.
- */
 public final class PlayerPlugin extends JavaPlugin {
 
     @Override
@@ -21,6 +18,8 @@ public final class PlayerPlugin extends JavaPlugin {
                 new PluginModule(this),
                 new ConfigModule()
         );
+
+        injector.getInstance(Config.class).loadValues();
 
         final PluginManager pluginManager = this.getServer().getPluginManager();
         pluginManager.registerEvents(injector.getInstance(NoteRequestListener.class), this);
