@@ -41,4 +41,5 @@ public final class PluginModule extends AbstractModule {
         this.bind(PlayerPlugin.class).toInstance(this.playerPlugin);
         this.bind(JavaPlugin.class).toInstance(this.playerPlugin);
     }
+
 }

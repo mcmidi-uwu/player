@@ -17,12 +17,13 @@ public final class PlayerPlugin extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
 
-        Injector injector = Guice.createInjector(
+        final Injector injector = Guice.createInjector(
                 new PluginModule(this),
                 new ConfigModule()
         );
 
-        PluginManager pluginManager = this.getServer().getPluginManager();
+        final PluginManager pluginManager = this.getServer().getPluginManager();
         pluginManager.registerEvents(injector.getInstance(NoteRequestListener.class), this);
     }
+
 }
