@@ -12,9 +12,11 @@ java {
 
 repositories {
     mavenCentral()
-    mavenLocal() // mcmidi server
     maven("https://papermc.io/repo/repository/maven-public/") {
         name = "papermc"
+    }
+    maven("https://repo.thbn.me/snapshots/") {
+        name = "thbn-snapshots"
     }
 }
 
