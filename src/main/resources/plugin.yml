@@ -1,9 +1,9 @@
-name: player
+name: mcmidi-player
 description: Plays mcmidi note requests.
 authors: [ TehBrian ]
 website: https://github.com/mcmidi-uwu/player
 
-depend: [ server ]
+depend: [ mcmidi-server ]
 
 version: ${version}
 main: xyz.tehbrian.mcmidi.player.PlayerPlugin
