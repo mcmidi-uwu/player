@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
     compileOnly("xyz.tehbrian.mcmidi:server-api:1.0.0-SNAPSHOT")
 
     implementation("com.google.inject:guice:5.0.1")

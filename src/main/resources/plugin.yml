@@ -7,4 +7,4 @@ depend: [ mcmidi-server ]
 
 version: ${version}
 main: xyz.tehbrian.mcmidi.player.PlayerPlugin
-api-version: 1.17
+api-version: 1.18
