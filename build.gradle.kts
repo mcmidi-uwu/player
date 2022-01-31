@@ -7,8 +7,7 @@ group = "xyz.tehbrian.mcmidi"
 version = "1.0.0-SNAPSHOT"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
 repositories {
