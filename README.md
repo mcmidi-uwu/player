@@ -1,5 +1,6 @@
 # mcmidi/`player`
-A plugin which plays mcmidi note requests.
 
-To be functional, this plugin must be paired with
+A plugin that plays mcmidi note requests.
+
+This plugin depends on
 [mcmidi/`server`](https://github.com/mcmidi-uwu/server).
